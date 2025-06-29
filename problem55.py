@@ -1,6 +1,6 @@
 class Solution:
     def canJump(self, nums: list[int]) -> bool:
-        n,rightmost = len(nums),0;
+        n,rightmost = len(nums),0
         for i in range(n):
             if i <= rightmost:
                 rightmost = max(rightmost,i+nums[i])
